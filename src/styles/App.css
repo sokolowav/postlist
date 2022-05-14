@@ -58,3 +58,8 @@ body {
   color: teal;
   text-align: center;
 }
+
+.post__btns {
+  display: flex;
+  flex-direction: column;
+}
