@@ -23,6 +23,10 @@ body {
   justify-content: space-between;
 }
 
+.post__content {
+  padding-right: 15px;
+}
+
 .time {
   color: grey;
   font-weight: bold;
