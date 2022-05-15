@@ -63,11 +63,7 @@ export default function Posts() {
 
       <PostFilter filter={filter} setFilter={setFilter} />
 
-      {postError && (
-        <h1 style={{ textAlign: 'center', color: 'darkred' }}>
-          Error {postError}
-        </h1>
-      )}
+      {postError && <h1 className='error'>Error {postError}</h1>}
 
       {isPostsLoading ? (
         <Loader />

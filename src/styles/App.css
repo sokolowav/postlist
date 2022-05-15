@@ -59,6 +59,11 @@ body {
   text-align: center;
 }
 
+.error {
+  text-align: center;
+  color: darkred;
+}
+
 .post__btns {
   display: flex;
   flex-direction: column;
