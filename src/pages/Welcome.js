@@ -9,6 +9,7 @@ export default function Welcome() {
   const login = (e) => {
     e.preventDefault()
     setIsAuth(true)
+    localStorage.setItem('auth', 'true')
   }
 
   return (

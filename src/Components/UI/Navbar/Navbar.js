@@ -5,6 +5,12 @@ import cl from './Navbar.module.css'
 
 export default function Navbar() {
   const { isAuth, setIsAuth } = useContext(AuthContext)
+
+  const logout = () => {
+    setIsAuth(false)
+    localStorage.removeItem('auth')
+  }
+
   return (
     <div className={cl.navbar}>
       <div className={cl.navbar__linksBlock}>
@@ -16,14 +22,14 @@ export default function Navbar() {
             <Link className={cl.navbar__link} to='/about'>
               Another page
             </Link>
-            <div className={cl.navbar__link} onClick={() => setIsAuth(false)}>
+            <div className={cl.navbar__link} onClick={logout}>
               Logout
             </div>
           </>
         ) : (
-          <div className={cl.navbar__link} onClick={() => setIsAuth(true)}>
+          <Link className={cl.navbar__link} to='/'>
             Login
-          </div>
+          </Link>
         )}
       </div>
     </div>
