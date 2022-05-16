@@ -4,6 +4,7 @@ import MyInput from '../Components/UI/Input/MyInput'
 import { AuthContext } from '../context'
 
 export default function Welcome() {
+  // eslint-disable-next-line no-unused-vars
   const { isAuth, setIsAuth } = useContext(AuthContext)
 
   const login = (e) => {

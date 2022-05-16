@@ -11,10 +11,11 @@ export default function PostFilter({ filter, setFilter }) {
         onChange={(e) => setFilter({ ...filter, query: e.target.value })}
       />
       <MySelect
-        defaultValue='Ordered by the'
+        defaultValue='Ordered by the...'
         options={[
-          { value: 'title', name: 'Title' },
+          { value: 'id', name: 'Id' },
           { value: 'body', name: 'Body' },
+          { value: 'title', name: 'Title' },
         ]}
         value={filter.sort}
         onChange={(selectedSort) =>
